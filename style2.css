@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url('./images/cloudy.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+ 
+    margin:30px auto;
+    background-color: rgb(22, 22, 22);
+    max-width: 400px;
+    
+    padding:15px 25px;
+    border-radius: 10px;
+}
+.container .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.container .header .search{
+    width: 100%;
+    position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 15px;
+}
+.container .header .search input{
+   width: 100%;
+    border-radius: 30px;
+    border: none;
+    background: #1e1e1e;
+    outline: none;
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    
+}
+input::placeholder{
+    color: white;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: none;
+    color:rgb(226, 10, 10);
+}
+
+.container .header .search i{
+    
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+}
+.container .header .weather__units span {
+color:white;
+font-size: 25px;
+font-weight: bold;
+cursor: pointer;
+
+}
+.container .header .weather__units span:first-child{
+    margin-right: 10px;
+}
+.container .weather-body{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.weather-forecast{
+    margin: 15px;
+    color:white;
+    background-color: #1e1e1e;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container .weather-body img{
+width:100px;
+}
+.tempature-range{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tempature-range p{
+    color:white;
+    margin-right: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+.weather_information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+}
+
+
+
+.weather__card {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    color:white;
+   
+}
+
+.weather__card svg{
+    color:white;
+}
+.weather__card i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.weather__card p {
+    font-size: 14px;
+}
+
+@media(max-width: 936px){
+    .container {
+        width: 90%;
+    }
+
+    .weather__header {
+        flex-direction: column;
+    }
+
+    .weather__units {
+        margin-top: 1rem;
+    }
+}
+
+
+
